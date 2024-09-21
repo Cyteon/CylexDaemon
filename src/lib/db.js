@@ -1,8 +1,8 @@
 const { QuickDB } = require("quick.db");
 
-const db = new QuickDB({ filePath: "../../skill.issue" });
+const db = new QuickDB({ filePath: "./db.sqlite" });
 
-const servers = db.table("servers");
 const info = db.table("info");
+const servers = db.table("servers");
 
 module.exports = { db, servers, info };
